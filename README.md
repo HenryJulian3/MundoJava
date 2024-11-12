@@ -18,17 +18,21 @@ To run this project on your local machine, you must have Docker installed. Follo
 1. **Make sure you have Docker installed**.
 
 2. **Download the image from Docker Hub**:
+
 Run the following command in your terminal to download the project image from Docker Hub:
 ```
 docker pull henryjulian/mundojava:latest
 ```
 3. **Run the image on your local machine**:
+
 Once the image has been downloaded, run the following command to start the container
 ```
 docker run -p 8080:80 henryjulian/mundojava:latest
 ```
 This will start a web server on your local machine on port 8080.
+
 4. **Access the program**:
+
 Open your web browser and navigate to http://localhost:8080 to see the "Hello World with JavaScript" message.
 
 ## Deploying the program in Serverless Render
