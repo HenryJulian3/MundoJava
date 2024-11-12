@@ -1,24 +1,35 @@
 # UNIVERSIDAD CENTRAL DEL ECUADOR
-## Programación Distribuida
+## Distributed Programming
 ### Henry Julián Pulupa Calderón
 
-## Descripción del programa
-El proyecto **MundoJava** es una aplicación web simple que muestra el mensaje "¡Hola Mundo desde MundoJava!" en la pantalla del navegador. El programa está hecho con HTML y JavaScript, y su propósito es servir como una demostración de cómo crear una página web básica utilizando estos lenguajes de programación.
+## Program Description
+The **MundoJava** project is a simple web application that displays the message "Hello World with JavaScript" on the browser screen. The program is made with HTML and JavaScript, and its purpose is to serve as a demonstration of how to create a basic web page using these programming languages.
 
-La aplicación está empaquetada en una imagen Docker para facilitar su despliegue y ejecución en cualquier entorno que soporte Docker, haciendo que el proceso sea rápido y sencillo.
+The application is packaged in a Docker image to facilitate its deployment and execution in any environment that supports Docker, making the process fast and easy.
 
-## Lenguajes de programación que usa
-- **HTML**: Para la estructura de la página web.
-- **JavaScript**: Para manipular el DOM y actualizar el contenido de la página.
-- **Docker**: Para crear una imagen que contiene la aplicación y facilitar su despliegue en cualquier entorno compatible con Docker.
+## Programming languages ​​used
+- **HTML**: For the structure of the web page.
+- **JavaScript**: To manipulate the DOM and update the content of the page.
+- **Docker**: To create an image containing the application and facilitate its deployment in any Docker-compatible environment.
 
-## Cómo ejecutar el programa descargando la imagen desde Docker Hub
-Para ejecutar este proyecto en tu máquina local, debes tener Docker instalado. Sigue estos pasos:
-Ordered
-1. **Asegúrate de tener Docker instalado**.
+## How to run the program by downloading the image from Docker Hub
+To run this project on your local machine, you must have Docker installed. Follow these steps:
 
-2. **Descargar la imagen desde Docker Hub**:
-   Ejecuta el siguiente comando en tu terminal para descargar la imagen del proyecto desde Docker Hub:
+1. **Make sure you have Docker installed**.
 
-   ```bash
-   docker pull henryjulian/mundojava:latest
+2. **Download the image from Docker Hub**:
+Run the following command in your terminal to download the project image from Docker Hub:
+```
+docker pull henryjulian/mundojava:latest
+```
+3. **Run the image on your local machine**:
+Once the image has been downloaded, run the following command to start the container
+```
+docker run -p 8080:80 henryjulian/mundojava:latest
+```
+This will start a web server on your local machine on port 8080.
+4. **Access the program**:
+Open your web browser and navigate to http://localhost:8080 to see the "Hello World with JavaScript" message.
+
+## Deploying the program in Serverless Render
+To view the execution of the message to be displayed, just click [here](https://mundojava.onrender.com)
